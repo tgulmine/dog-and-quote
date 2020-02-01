@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import './styles/main.scss';
 import axios from 'axios';
 import logo from './img/logo.png';
-import pattern from './img/pattern.png';
 
 const App: React.FC = () => {
   const [dog, setDog] = useState('');
