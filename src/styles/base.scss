@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
 @mixin medium {
   @media (min-width: 768px) { @content; }
 }
@@ -20,6 +22,10 @@ $spinner-mult: 2;
   }
 }
 
+.roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
 .dog-height {
   height: 260px;
 
@@ -27,11 +33,26 @@ $spinner-mult: 2;
     height: 300px;
   }
   @include large {
-    height: 340px;
+    height: 320px;
   }
   @include extra-large {
     height: 380px;
   }
+}
+
+.logo {
+  width: auto;
+  height: 105px;
+
+  @include extra-large {
+    height: 125px;
+  }
+}
+
+.bg-dog {
+    background-image: url("../img/pattern.png");
+    background-repeat: repeat;
+    background-color: #efebe9; 
 }
 
 .dog-margin {
@@ -48,7 +69,7 @@ $spinner-mult: 2;
   }
   @include large {
     max-width: 500px;
-    max-height: 340px;
+    max-height: 320px;
   }
   @include extra-large {
     max-width: 500px;
@@ -69,10 +90,10 @@ $spinner-mult: 2;
   width: 64px * $spinner-mult;
   height: 64px * $spinner-mult;
   margin: 8px * $spinner-mult;
-  border: 8px * $spinner-mult solid #fff;
+  border: 8px * $spinner-mult solid #956A6D;
   border-radius: 50%;
   animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-  border-color: #fff transparent transparent transparent;
+  border-color: #956A6D transparent transparent transparent;
 }
 .lds-ring div:nth-child(1) {
   animation-delay: -0.45s;
