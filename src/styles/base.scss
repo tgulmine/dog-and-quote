@@ -1,14 +1,55 @@
+@mixin medium {
+  @media (min-width: 768px) { @content; }
+}
+@mixin large {
+  @media (min-width: 1024px) { @content; }
+}
+@mixin extra-large {
+  @media (min-width: 1280px) { @content; }
+}
+
 $w-dog: 500px;
 $h-dog: 380px;
 $spinner-mult: 2;
 
-.dog-size {
-  height: $h-dog;
+.btn {
+  display: none;
+
+  @include medium {
+    display: inherit;
+  }
+}
+
+.dog-height {
+  height: 260px;
+
+  @include medium {
+    height: 300px;
+  }
+  @include large {
+    height: 340px;
+  }
+  @include extra-large {
+    height: 380px;
+  }
 }
 
 .dog-max-size {
-  max-width: $w-dog;
-  max-height: $h-dog;
+  max-width: 100vw;
+  max-height: 260px;
+
+  @include medium {
+    max-width: 500px;
+    max-height: 300px;
+  }
+  @include large {
+    max-width: 500px;
+    max-height: 340px;
+  }
+  @include extra-large {
+    max-width: 500px;
+    max-height: 380px;
+  }
 }
 
 .lds-ring {
