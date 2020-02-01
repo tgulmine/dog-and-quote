@@ -38,10 +38,10 @@ const App: React.FC = () => {
   }, []);
 
   return (
-    <div className="bg-yellow-700 w-screen h-screen flex-col items-center justify-between md:justify-start">
-      <div className="text-3xl md:text-4xl xl:text-5xl font-bold pt-4 text-center text-white">Dog and Quote</div>
+    <div className="bg-yellow-700 w-screen h-screen md:flex-none md:flex-col items-center justify-around md:justify-start">
+      <div className="text-3xl xl:text-4xl font-bold pt-4 text-center text-white pt-6">Dog and Quote</div>
 
-      <div className="dog-height flex justify-center items-center mt-8">
+      <div className="dog-height dog-margin flex justify-center items-center md:mt-4 xl:mt-8">
         {active ? (
           <img className="dog-max-size" alt="" src={dog} onClick={clickImage} />
         ) : (
@@ -55,13 +55,13 @@ const App: React.FC = () => {
       </div>
 
       <div
-        className="ml-auto mr-auto text-base lg:text-lg xl:text-xl font-normal italic mt-4 text-white text-center
-      max-w-xs md:max-w-lg lg:max-w-xl"
+        className="ml-auto mr-auto text-base lg:text-lg xl:text-xl font-normal italic mt-8 md:mt-4 text-white text-center
+        max-w-xs md:max-w-lg lg:max-w-xl"
       >
         {quote}
       </div>
       <div
-        className="btn border border-white rounded cursor-pointer ml-auto mr-auto text-white w-1/5 lg:w-1/6 xl:w-1/7 mt-10 lg:mt-12 xl:mt-16
+        className="btn border border-white rounded cursor-pointer ml-auto mr-auto text-white w-1/5 lg:w-1/6 xl:w-1/7 mt-8 lg:mt-10 xl:mt-16
         hover:bg-white hover:text-yellow-700"
         onClick={getData}
       >
