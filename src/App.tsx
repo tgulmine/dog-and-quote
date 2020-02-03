@@ -55,7 +55,7 @@ const App: React.FC = () => {
         )}
       </div>
       <div
-        className="ml-auto mr-auto text-lg xl:text-xl font-bold italic mt-8 md:mt-4 text-pink-dog-dark text-center
+        className="ml-auto mr-auto text-lg xl:text-xl font-bold italic mt-8 text-pink-dog-dark text-center
         max-w-xs md:max-w-lg lg:max-w-xl"
       >
         {active ? `"${quote}"` : null}
