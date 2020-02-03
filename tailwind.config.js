@@ -130,7 +130,8 @@ module.exports = {
         700: '#b83280',
         800: '#97266d',
         900: '#702459',
-        'dog': '#956A6D'
+        'dog-light': '#AF6F86',
+        'dog-dark': '#956A6D'
       }
     },
     spacing: {
@@ -180,6 +181,7 @@ module.exports = {
       sm: '0.125rem',
       default: '0.25rem',
       lg: '0.5rem',
+      xl: '50px',
       full: '9999px'
     },
     borderWidth: {
