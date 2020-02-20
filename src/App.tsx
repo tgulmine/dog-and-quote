@@ -44,7 +44,7 @@ const App: React.FC = () => {
       <img className="logo ml-auto mr-auto pt-6 cursor-pointer" alt="" src={logo} onClick={refreshPage}></img>
       <div className="dog-height dog-margin flex justify-center items-center md:mt-4 xl:mt-8">
         {active ? (
-          <img className="dog-max-size rounded-xl shadow-xl" alt="" src={dog} onClick={getData} />
+          <img className="dog-max-size rounded-xl shadow-xl cursor-pointer" alt="" src={dog} onClick={getData} />
         ) : (
           <div className="lds-ring">
             <div></div>
